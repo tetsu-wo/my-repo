@@ -1,0 +1,9 @@
+name: compare
+on: push
+jobs:
+  compare:
+    runs-on: ubuntu-latest
+    steps:
+      - run: printenv | grep '_FUNC'
+        env:
+          CONTAINER_FUNC: ${{ contains('hello', 'ell') }}

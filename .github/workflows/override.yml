@@ -1,5 +1,5 @@
 name: override environment variables
-on: push
+on: workflow_dispatch
 env: 
   EXAMPLE: Defined by workflow level
 jobs:
